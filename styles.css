@@ -1,0 +1,325 @@
+
+body {font-family:Times New Roman, Helvetica, sans-serif;
+  background-color: #1C2635;
+  margin: 0;
+  color: #000;
+  width: fit-content;
+}
+
+
+
+
+
+.navbar {
+  background-color: #4b668f;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  margin-left: 20px;
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+
+
+
+.trending-movies {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  background-color: #1C2635;
+  color: #FFFFFF;
+}
+
+.movie-list {
+  display: flex;
+  animation: carousel 50s infinite linear;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.movie {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 450px;
+  background-color: #1C2635;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  height: 450px;
+  max-height: 70%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.movie h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.movie p {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-content {
+  width: 50%;
+  text-align: center;
+}
+
+.welcome-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.feedback a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+.slide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-decoration: none;
+}
+
+
+.trending-slideshow {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-bottom: 15px;
+}
+
+.trending-slide {
+  flex: 0 0 300px;
+  margin-right: 20px;
+  scroll-snap-align: center;
+}
+
+
+.trending-slideshow::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-item {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.movie-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-item p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+h1 {
+color: #ffffff;
+}
+
+
+
+.games-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.game-item {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.game-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.game-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.game-item p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+.collections-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.collection-item {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.collection-item img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.collection-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.collection-item p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+
+
+.movie-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.movie-poster {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.movie-poster img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  flex: 1 1 auto;
+  max-width: 600px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
